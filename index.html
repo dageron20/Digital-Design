@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>React.JS</title>
+    <link rel="stylesheet" href="./fonts/gilroy/stylesheet.css">
+    <link rel="stylesheet" href="./fonts/playfair/stylesheet.css">
+    <script src="./js/script.js" defer></script>
+    <script src="./js/scroll.js" defer></script>
+    <script src="./Task2/task2.js" defer></script>
+</head>
+<body class="bcg-body-img">
+    <header class="header">
+        <nav class="nav-wrapper">
+            <div class="container-wide">
+                <div class="row space-betweer align-center">
+                    <h2 class="logo">REACT . JS</h2>
+                    <div class="nav">
+                        <ul>
+                            <li><a href="#Benefits">Преимущества</a></li>
+                            <li><a href="#Setup">Установка</a></li>
+                            <li><a href="#library">Полезные библиотеки</a></li>
+                        </ul>
+                    </div>
+                    <a href="#" class="login">Telegram</a>
+                        <button class="nav-button">
+                            <span class="nav-button-icon"></span>
+                        </button>
+
+                        <div class="mobile-nav">
+                            <div class="nav">
+                                <ul>
+                                    <li><a href="#Benefits">Преимущества</a></li>
+                                    <li><a href="#Setup">Установка</a></li>
+                                    <li><a href="#library">Полезные библиотеки</a></li>
+                                </ul>
+                            </div>
+                            <a href="https://t.me/DenisKir1" class="login">Telegram</a>
+                        </div>
+                </div>
+            </div>
+        </nav>
+
+        <a href="#Benefits" class="menu-main">
+            <div class="menu-main-category">WEB-технологии</div>
+            <h1 class="menu-main-title">Знакомство с React</h1> 
+            <p class="menu-main-scroll">листать ниже</p>         
+        </a>
+    </header>   
+
+    <main>
+        <a name = "Benefits" class="hidden"></a>
+        <div class="container" >
+            <article class="article" >
+                
+                <div class="article-text" data-number="01">
+                    <div class="article-subtitle">Производительность</div>
+                    <h2 class="article-title">Гибкость библиотеки</h2>
+                    <p>
+                        На скорость работы приложения влияет количество кода, который отправляется браузеру — чем кода больше, тем приложение медленнее. В отличие от других инструментов, React при правильном использовании сокращает количество лишнего кода.
+                    </p>
+                    <a href="https://ru.reactjs.org/docs/optimizing-performance.html" class="article-read-more">Читать далее</a>
+                </div>
+                <div class="article-img">
+                    <img src="./img/1.jpg" alt="Производительность">
+                </div>
+            </article>
+            <article class="article" >
+                <div class="article-text" data-number="02">
+                    <div class="article-subtitle">Тестирование</div>
+                    <h2 class="article-title">Группировка по компонентам</h2>
+                    <p>
+                        Жесткая разметка, группировка по компонентам и тестирование корректности рендеринга упрощает поддержку кода. Особенности React позволяют создавать код, в котором можно быстро найти баги и устранять их — разработчик может внести исправления в определенную часть кода приложения, а не везде.
+                    </p>
+                    <a href="https://ru.reactjs.org/docs/testing.html" class="article-read-more">Читать далее</a>
+                </div>
+                <div class="article-img">
+                    <img src="./img/2.jpg" alt="Тестирование">
+                </div>
+            </article>
+            <article class="article" >
+                <div class="article-text" data-number="03">
+                    <div class="article-subtitle">Безопасность</div>
+                    <h2 class="article-title">Защита от поломки интерфейса</h2>
+                    <p>
+                        Предохранители защищают от поломки интерфейса для пользователей. Если при обновлении приложения поломается какая-то функциональность, интерфейс для пользователей не изменится. Это возможно благодаря предохранителям — оборачивать в предохранители можно каждую функцию, которая несет риск поломки — это поможет избежать каскада ошибок.
+                    </p>
+                    <a href="https://ru.reactjs.org/docs/error-boundaries.html" class="article-read-more">Читать далее</a>
+                </div>
+                <div class="article-img">
+                    <img src="./img/3.jpg" alt="Безопасность">
+                </div>
+            </article>
+
+            <a class="back_to_top" title="Наверх">↑</a>
+        </div>
+
+        <div class="container">
+            <a name = "Setup" class="hidden"></a>
+            <article class="article-text-main">
+                <div class="article-subtitle">Установка</div>
+                <div class="article-main-text">
+                    <h1>Создаем приложение React</h1>
+                    <p>Create React App - это инструмент (созданный разработчиками из Facebook), который даст вам огромное преимущество при создании приложений React. Он обрабатывает все настройки, поэтому вам не нужно знать ни Babel, ни Webpack. Вы просто запускаете первоначальную установку, и вы сразу же окажетесь в локальной среде разработки!</p>
+
+                    <h1>Установка с помощью Create React App</h1>
+                    <p>Все, что нам нужно сделать, это открыть наш терминал и запустить следующую команду:</p>
+                    <code>npx create-react-app </code>
+                    <p>Мы используем npx для загрузки и запуска команд Node.js без их установки. Если у вас не установлен Node, вы можете скачать его здесь .
+                    </p>
+                    <p>Запустите указанную выше команду, чтобы начать установку! Дайте ему любое имя, которое вам нравится..
+                    </p>
+                    <img src="./img/load.png" alt="Загрузка React">
+                    <p>Установка может занять несколько минут. Прямо сейчас он устанавливает все зависимости, необходимые для построения вашего проекта. И это также генерирует вашу первоначальную структуру проекта.
+                    </p>
+                    <img src="./img/load2.png" alt="Загрузка React">
+                    <p>Успех! Теперь вы можете открыть папку вашего проекта и проверить созданную файловую структуру.
+                    </p>
+                    <p>Несколько команд были добавлены в файл package.json:</p>
+                    <ol>
+                        <li><span>npm start</span> запускает сервер разработки, включая автоматическую перезагрузку страницы при внесении изменений</li>
+                        <li><span>run build</span>  связывает приложение в статические файлы для производства в папку build    </li>
+                        <li><span>npm test</span> запускает тестов с помощью Jest    </li>
+                        <li><span>run eject</span>  выводит настройки вашего приложения из create-react-app, которые позволяет вам настроить конфигурацию вашего проекта    </li>
+                    </ol>
+                    <h2>Запуск вашего приложения</h2>
+                    <p>Теперь давайте запустим наш локальный сервер! Из папки вашего приложения запустите:
+                    </p>
+                    <code>npm start</code>
+                    <p>Ваше приложение запустится в браузере на <span>localhost:3000</span>
+                    </p>
+                    <img src="./img/load34.png" alt="Загрузка React">
+                    <p>Каждый раз, когда вы начинаете новый проект с помощью <span>create-react-app</span>, вы будете иметь последнюю версию React, React-DOM и React-Scripts. Теперь давайте кратко рассмотрим некоторые функции create-react-app.
+                    </p>
+                    <h1>Возможности Create-React-App</h1>
+                    <p>Как вы увидите в сгенерированном <span>package.json</span>, есть ряд команд, которые доступны для использования в ваших приложениях - давайте поговорим о них немного подробнее.
+                    </p>
+                    <h2>Прод сборка</h2>
+                    <p>Когда приходит время перейти от разработки к публикации в сети, вы можете сделать это, запустив npm <span>run build</span>. Будет сгенерирована папка <span>build</span>, содержащая все статические файлы, которые будут использоваться на сервере.
+                    </p>
+                    <p>Сама команда <span>build</span> преобразует ваш код React в код, который понимает браузер (используя Babel). Он также оптимизирует ваши файлы для лучшей производительности, объединяя все ваши файлы JavaScript в один файл, который будет минимизирован для сокращения времени загрузки.
+                    </p>
+                    <h2>Тестирование вашего приложения</h2>
+                    <p>В комплекте с <span>create-react-app</span> поставляется JEST, который позволяет проверить ваш код с помощью команды <span>npm test</span>. Он будет запускаться аналогично <span>npm start</span>, он будет перезапускать ваши тесты каждый раз, когда вы вносите изменения.
+                    </p>
+                    <p>Для тех, кто заинтересован в тестировании компонентов с помощью Jest, все, что вам нужно, это либо добавить суффиксы к нужным файлам,  .spec.js  либо .test.js, либо переместить файлы с тестами в папку __tests__. Jest запустит ваши тесты для указанных вами файлов.
+                    </p>
+                    <h2>Ejecting</h2>
+                    <p>Всякий раз, когда вы создаете приложение с помощью create-react-app, ваши параметры сборки не могут быть изменены, так как они были предварительно настроены в react-scripts. Тем не менее, запустив <span>npm run eject</span>, вы можете получить полный контроль над конфигурацией вашего приложения.
+                    </p>
+                    <p>Конфиг будет скопирован в каталог вашего приложения в папку <span>config</span>, а скрипты - в папку <span>scripts</span>. Затем вы можете отредактировать настройки Webpack, Babel и ESLint в соответствии с вашими пожеланиями.
+                    </p>
+                    <h2>Сообщения об ошибках</h2>
+                    <p>Еще одна полезная функция, включенная в приложение create-react-app, - это встроенные сообщения об ошибках, которые генерируются в окне консоли и браузера.
+                    </p>
+                    <p>Опечатки и синтаксические ошибки приведут к ошибке компиляции. И если у вас есть куча ошибок, вы получите оверлей, разбивающий каждую, например так:
+                    </p>
+                    <img src="./img/prob.png" alt="Ошибки">
+                    <h1>Заключение</h1>
+                    <p>Мы рассмотрели, как настроить локальную среду разработки с помощью create-react-app. Вам не нужно тратить время на установку зависимостей или настройку процесса сборки - вы можете сразу перейти к написанию кода!
+                    </p>                
+                </div>
+            </article>
+        </div>
+
+        <div class="container">
+            <a name = "library" class="hidden"></a>
+            <article class="article-text-main">
+                <div class="article-subtitle">Полезные библиотеки</div>
+                <div class="article-main-text">
+                    <ol>
+                        <li>React Material-UI
+                            <p>React Material-UI — это набор компонентов React, которые реализуют концепцию Material Design от Google. Если учесть то, что у библиотеки Material-UI более 30 тысяч звёзд на GitHub, она, вероятно, является самой популярной библиотекой для React. Эта библиотека бурно развивается, ожидается выход Material-UI v1.
+                                <img src="./img/lib1.png" alt="библиотека 1">
+                            </p>
+                        </li>
+                        <li>React-Bootstrap
+                            <p>
+                                React-Bootstrap — это библиотека React-компонентов, подходящих для повторного использования, которая реализует возможности популярного шаблона Bootstrap от Twitter. На GitHub у неё около 11 тысяч звёзд. Вероятно, широкую популярность она снискала благодаря своей простоте и удобству работы с ней.
+                                <img src="./img/lib2.png" alt="библиотека 1">
+                            </p>
+                        </li>
+                        <li>React Toolbox
+                            <p>
+                                React Toolbox — это набор компонентов для React, реализующих спецификацию Google Material Design. Она построена на базе некоторых весьма передовых технологий вроде модулей CSS (тут используется SASS), WebPack и ES6. На сайте библиотеки можно найти интерактивную песочницу, в которой с ней можно поэкспериментировать.
+                                <img src="./img/lib3.png" alt="библиотека 1">
+                            </p>
+                        </li>
+                        <li>React Belle
+                            <p>
+                                React Belle — это набор компонентов React, оптимизированный для работы на мобильных устройствах и на настольных ПК. Стили, имеющиеся здесь, поддаются глубокой настройке, что позволяет как задавать базовые стили для всех компонентов, так и модифицировать стиль каждого конкретного компонента по отдельности. Вот симпатичный пример использования этой библиотеки.
+                                <img src="./img/lib4.png" alt="библиотека 1">
+                            </p>
+                        </li>
+                        <li>React Grommet
+                            <p>
+                                React Grommet даёт в распоряжение разработчика обширный набор компонентов, сгруппированных по принципу особенностей их использования. Все они созданы с учётом требований доступности, кросс-браузерной совместимости и поддерживают настройку внешнего вида с помощью тем.
+                                <img src="./img/lib5.png" alt="библиотека 1">
+                            </p>
+                        </li>
+                    </ol>
+                </div>
+            </article>
+        </div>
+
+        
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-copyright">
+                    <div class="footer-copyright-logo">
+                        <div class="logo">REACT . JS</div>
+                    </div>
+                    <p class="footer-copyright-desc">
+                        Выбирайте современные WEB-технологии и разрабатывайте сайты с удовольствием!
+                    </p>
+                    <p class="footer-copyright-text">
+                        Copyright 2022 Кирилюк Д.А. Входное задание
+                    </p>
+                </div>
+                <div class="footer-nav">
+                    <h4 class="footer-nav-title">Контакты</h4>
+                        <ul>
+                            <li><a href="https://vk.com/denkirilyuk">Вконтакте</a></li>
+                            <li><a href="https://t.me/DenisKir1">Tg: @DenisKir1</a></li>
+                            <li><a href="email: den-kir1@yandex.ru">den-kir1@yandex.ru</a></li>
+                            <li><a href="https://github.com/dageron20">GitHub</a></li>
+                        </ul>
+                </div>
+                <div class="footer-nav">
+                    <h4 class="footer-nav-title">Больше о React</h4>
+                        <ul>
+                            <li><a href="https://ru.reactjs.org/">ru.reactjs.org</a></li>
+                            <li><a href="https://habr.com/ru/company/ruvds/blog/343022/">habr.com</a></li>
+                            <li><a href="https://learn-reactjs.ru/tutorial">learn-reactjs.ru</a></li>
+                        </ul>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+    
+    
+</body>
+</html>
