@@ -84,6 +84,11 @@
         font-size: 44px;
     }
 
+    .article-text-main {
+        padding-left: 50px;
+        margin-bottom: 100px;
+    }
+
     .footer-nav {
         margin-bottom: 50px;
     }
